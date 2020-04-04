@@ -15,15 +15,15 @@
     In cmd prompt type, node --version and npm --version.
     We got the versions
 
-###For angular setup
+# For angular setup
   AFTER CLONING THE PROJECT,GO TO THAT DIRECTORY AND TYPE THE COMMAND IN CMD PROMPT
   1  npm run init
-    It runs the command npm install -g @angular/cli@8.3.21 version in your system globally
+    # It runs the command npm install -g @angular/cli@8.3.21 version in your system globally
   2  For installion is done or not 
-     ng --version or ng v
+     # ng --version or ng v
      
  ###########Project setup is done
  
  # To run the project
-   type the command
-    ng serve or npm run start
+   Type the command
+    # ng serve or npm run start
