@@ -10,9 +10,12 @@ import { ManageIndentComponent } from './Dashboard/manage-indent/manage-indent.c
 import { CreateDispatchComponent } from './Dashboard/create-dispatch/create-dispatch.component';
 import { ArrivalsComponent } from './Dashboard/arrivals/arrivals.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, DashboardComponent, CreateIndentComponent, ManageIndentComponent, CreateDispatchComponent, ArrivalsComponent],
+  declarations: [AppComponent, LoginComponent, DashboardComponent, CreateIndentComponent, ManageIndentComponent, CreateDispatchComponent, ArrivalsComponent, HeaderComponent, SidebarComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent]
