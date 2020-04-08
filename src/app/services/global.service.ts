@@ -6,4 +6,9 @@ import { Injectable } from '@angular/core';
 export class GlobalService {
 
   constructor() { }
+
+  userLogedIn(){
+    return JSON.parse(sessionStorage.getItem('userLoggedIn'));
+  }
+
 }
