@@ -11055,8 +11055,9 @@ button,
 
 .app-header__logo .logo-src {
     height: 23px;
-    width: 97px;
-    background: url(./assets/images/logo-inverse.png)
+    width: 267px;
+    background: url(assets/images/logo-inverse.jpeg);
+    background-repeat: no-repeat;
 }
 
 .app-header__menu,
@@ -11280,7 +11281,7 @@ button,
 }
 
 .app-header.header-text-dark .app-header__logo .logo-src {
-    background: url(./assets/images/logo-inverse.png)
+    background: url(assets/images/logo-inverse.jpeg)
 }
 
 .app-sidebar {
