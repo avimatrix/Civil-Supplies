@@ -16916,10 +16916,6 @@ legend {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0)
 }
 
-/*!
- * Font Awesome Free 5.6.3 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
 @font-face {
     font-family: 'Font Awesome 5 Free';
     font-style: normal;
@@ -22507,10 +22503,6 @@ legend {
     -moz-osx-font-smoothing: grayscale
 }
 
-/*! Modified from font-awesome helper CSS classes - PIXEDEN
- *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (CSS: MIT License)
- */
 .pe-lg {
     font-size: 1.1704rem;
     line-height: 0.75em;

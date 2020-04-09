@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   userCredentials(){
     console.log(this.userData);
-    this.router.navigate(['/Dashboard']);
+    this.router.navigate(['/Dashboard/Home']);
   }
 
 }

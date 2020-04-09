@@ -12,7 +12,7 @@ const routes: Routes = [
      {path: "", component: LoginComponent },
      {path: "Dashboard", component: LayoutComponent ,
      children:[
-       {path:'',component:DashboardComponent},
+       {path:'Home',component:DashboardComponent},
       {path: "CreateIndent", component: CreateIndentComponent},
       {path: "CreateDispatch", component: CreateDispatchComponent },
       {path: "ManageIndent", component: ManageIndentComponent },
