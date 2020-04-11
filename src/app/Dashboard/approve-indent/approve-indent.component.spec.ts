@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArrivalsComponent } from './arrivals.component';
+import { ApproveIndentComponent } from './approve-indent.component';
 
-describe('ArrivalsComponent', () => {
-  let component: ArrivalsComponent;
-  let fixture: ComponentFixture<ArrivalsComponent>;
+describe('ApproveIndentComponent', () => {
+  let component: ApproveIndentComponent;
+  let fixture: ComponentFixture<ApproveIndentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ArrivalsComponent ]
+      declarations: [ ApproveIndentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ArrivalsComponent);
+    fixture = TestBed.createComponent(ApproveIndentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
