@@ -15,10 +15,22 @@ import { FooterComponent } from './footer/footer.component';
 import { LayoutComponent } from './dashboard/layout/layout.component';
 import { ApproveIndentComponent } from './Dashboard/approve-indent/approve-indent.component';
 import { DistrictWiseDemandComponent } from './Dashboard/district-wise-demand/district-wise-demand.component';
+import {TableModule} from 'primeng/table';
+import { HttpClientModule } from '@angular/common/http';
+import {DropdownModule} from 'primeng/dropdown';
+import {ButtonModule} from 'primeng/button';
+import {TabViewModule} from 'primeng/tabview';
+import {TooltipModule} from 'primeng/tooltip';
+import {MenuModule} from 'primeng/menu';
+import {CardModule} from 'primeng/card';
+import {MenuItem} from 'primeng/api';
+import {PaginatorModule} from 'primeng/paginator';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, DashboardComponent, CreateIndentComponent, ManageIndentComponent, CreateDispatchComponent, HeaderComponent, SidebarComponent, FooterComponent, LayoutComponent, ApproveIndentComponent, DistrictWiseDemandComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,FormsModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,FormsModule,
+    TableModule,HttpClientModule,DropdownModule,ButtonModule,TabViewModule,TooltipModule,MenuModule,CardModule,PaginatorModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

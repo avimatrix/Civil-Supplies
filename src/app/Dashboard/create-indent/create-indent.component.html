@@ -23,6 +23,31 @@
 
     </div>
     <div class="card-body">
+      <p-table #dt [value]="districtWiseDemand">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Date </th>
+            <th>SPA Name</th>
+            <th>District Name</th>
+            <th>Mandal</th>
+            <th>Season</th>
+            <th>Gunny Bags Model</th>
+            <th>Req Qty</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-indents>
+          <tr>
+            <td>{{indents.date}}</td>
+            <td>{{indents.spaName}}</td>
+            <td>{{indents.dtName}}</td>
+            <td>{{indents.mandal}}</td>
+            <td>{{indents.season}}</td>
+            <td>{{indents.gunnyBags}}</td>
+            <td>{{indents.reqQty}}</td>
+          </tr>
+        </ng-template>
+        <!-- <p-paginator></p-paginator> -->
+      </p-table>
       <form>
         <div class="row">
           <div class="col-lg-6 col-md-12">

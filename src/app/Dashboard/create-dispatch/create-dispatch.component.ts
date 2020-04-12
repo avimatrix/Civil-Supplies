@@ -7,9 +7,67 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateDispatchComponent implements OnInit {
 
-  constructor() { }
-
+  createDispatch = [];
+  constructor() {}
+  first = 0;  
+  rows = 4;
   ngOnInit() {
+    this.createDispatch = [
+      {
+     
+        mandal:"Rapthadu",
+        godownName:"dummy",
+        gunnyBags: "B-Twill(kg)",
+        reqQty: "50 MT",
+        date: "24-03-2020",
+        comments:""
+      },
+      {
+        mandal:"G.Konduru",
+        godownName:"dummy",
+        gunnyBags: "B-Twill(kg)",
+        reqQty: "50 MT",
+        date: "24-03-2020",
+        comments:""
+      },
+      {
+     
+        mandal:"Rapthadu",
+        godownName:"dummy",
+        gunnyBags: "B-Twill(kg)",
+        reqQty: "50 MT",
+        date: "24-03-2020",
+        comments:""
+      },
+      {
+        mandal:"G.Konduru",
+        godownName:"dummy",
+        gunnyBags: "B-Twill(kg)",
+        reqQty: "50 MT",
+        date: "24-03-2020",
+        comments:""
+      },
+    ];
+     }
+  next() {
+    this.first = this.first + this.rows;
   }
+
+  prev() {
+    this.first = this.first - this.rows;
+  }
+
+  reset() {
+    this.first = 0;
+  }
+
+  isLastPage(): boolean {
+    return this.first === this.createDispatch.length - this.rows;
+  }
+
+  isFirstPage(): boolean {
+    return this.first === 0;
+  }
+
 
 }
