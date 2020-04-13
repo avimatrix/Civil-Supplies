@@ -5,7 +5,7 @@
         <i class="pe-7s-angle-left   icon-gradient bg-mean-fruit">
         </i>
       </div>
-      <div>Creat Dispatch
+      <div>Create Demand
         <div class="page-title-subheading">This is an example dashboard created using build-in elements and
           components.
         </div>
@@ -27,25 +27,28 @@
         <div class="row">
           <div class="col-lg-6 col-md-12">
             <div class="form-group row">
-              <label for="inputPassword" class="col-lg-3 col-form-label">SPA Name*</label>
+              <label for="inputPassword" class="col-lg-3 col-form-label">District</label>
               <div class="col-lg-9">
-                <input type="text" class="form-control" id="inputPassword" placeholder="">
-
+                <select class="form-control">
+                  <option disabled>--- Select ---</option>
+                  <option *ngFor="let district of districts">{{district}}</option>
+                </select>
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-12">
 
             <div class="form-group row">
-              <label for="inputPassword" class="col-lg-3 col-form-label">Jute Bag Model</label>
+              <label for="inputPassword" class="col-lg-3 col-form-label">Revenue Division</label>
               <div class="col-lg-9">
-                <input type="text" class="form-control" id="inputPassword" placeholder="">
-              </div>
+                <select class="form-control">
+                  <option>--- Select ---</option>
+                </select>              </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-12">
             <div class="form-group row">
-              <label for="inputPassword" class="col-lg-3 col-form-label">Gunny Bag Models</label>
+              <label for="inputPassword" class="col-lg-3 col-form-label">Mandal</label>
               <div class="col-lg-9">
                 <select class="form-control">
                   <option>--- Select ---</option>
@@ -56,85 +59,43 @@
           <div class="col-lg-6 col-md-12">
 
             <div class="form-group row">
-              <label for="inputPassword" class="col-lg-3 col-form-label">Dispatch Quantity</label>
+              <label for="inputPassword" class="col-lg-3 col-form-label">Buffer Godowon</label>
               <div class="col-lg-9">
-                <input type="text" class="form-control" id="inputPassword" placeholder="">
-              </div>
+                <select class="form-control">
+                  <option>--- Select ---</option>
+                </select>             
+               </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-12">
             <div class="form-group row">
-              <label for="inputPassword" class="col-lg-3 col-form-label">Gondown Name*</label>
+              <label for="inputPassword" class="col-lg-3 col-form-label">Season</label>
               <div class="col-lg-9">
-                <input type="text" class="form-control" id="inputPassword" placeholder="">
-
+                <select class="form-control">
+                  <option>--- Select ---</option>
+                </select>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 col-md-12">
             <div class="form-group row">
-              <label for="inputPassword" class="col-lg-3 col-form-label">Origin Location</label>
+              <label for="inputPassword" class="col-lg-3 col-form-label">Bags Model</label>
               <div class="col-lg-9">
-                <input type="text" class="form-control" id="inputPassword" placeholder="">
-
+                <select class="form-control">
+                  <option>--- Select ---</option>
+                </select>
               </div>
             </div>
           </div>
-
-
-          <div class="col-lg-6 col-md-12">
-            <div class="form-group row">
-              <label for="inputPassword" class="col-lg-3 col-form-label">Destination Location</label>
-              <div class="col-lg-9">
-                <input type="text" class="form-control" id="inputPassword" placeholder="">
-
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-6 col-md-12">
-            <div class="form-group row">
-              <label for="inputPassword" class="col-lg-3 col-form-label">Orgin Location</label>
-              <div class="col-lg-9">
-                <input type="text" class="form-control" id="inputPassword" placeholder="">
-
-              </div>
-            </div>
-          </div>
-
+ 
         </div>
       </form>
 
 
 <div>
 
-  <p-table #dt [value]="createDispatch" [paginator]="true" [rows]="5" [showCurrentPageReport]="true">
- 
-  <ng-template pTemplate="header">
-    <tr>
-      <th>Mandal Name</th>
-      <th>Godown Name</th>
-      <th>Gunny Bags Model</th>
-      <th>Required Qty(MT)</th>
-      <th>Required Date</th>
-      <th>Comments</th>
-    </tr>
-  </ng-template>
-  <ng-template pTemplate="body" let-indents>
-    <tr>
-      <td>{{indents.mandal}}</td>
-      <td>{{indents.godownName}}</td>
-      <td>{{indents.gunnyBags}}</td>
-      <td>{{indents.reqQty}}</td>
-      <td>{{indents.date}}</td>
-      <td>{{indents.comments}}</td>
-    
-    </tr>
-  </ng-template>
-  <!-- <p-paginator></p-paginator> -->
-</p-table>
+
 </div>
 
 
@@ -146,3 +107,66 @@
     </div>
   </div>
 </div>
+<div class="col-md-12 col-lg-12">
+  <div class="mb-3 card">
+    <div class="card-header-tab card-header-tab-animation card-header">
+      <div class="card-header-title">
+        <i class="header-icon lnr-apartment icon-gradient bg-love-kiss"> </i>
+      Create Indent
+      </div>
+
+    </div>
+    <div class="card-body">
+      <p-table #dt [value]="createDispatch" [paginator]="true" [rows]="5" [showCurrentPageReport]="true">
+ 
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Mandal Name</th>
+            <th>Godown Name</th>
+            <th>Gunny Bags Model</th>
+            <th>Required Qty(MT)</th>
+            <th>Required Date</th>
+            <th>Comments</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-indents>
+          <tr>
+            <td>{{indents.mandal}}</td>
+            <td>{{indents.godownName}}</td>
+            <td>{{indents.gunnyBags}}</td>
+            <td>{{indents.reqQty}}</td>
+            <td>{{indents.date}}</td>
+            <td>{{indents.comments}}</td>
+          
+          </tr>
+        </ng-template>
+        <!-- <p-paginator></p-paginator> -->
+      </p-table>
+
+      <div class="row mt-4">
+        <div class="col-lg-6 col-md-12">
+          <div class="form-group row">
+            <label for="inputPassword" class="col-lg-3 col-form-label">Total Req Qty</label>
+            <div class="col-lg-9">
+              <textarea class="form-control"> </textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="form-group row">
+            <label for="inputPassword" class="col-lg-3 col-form-label">Comments</label>
+            <div class="col-lg-9">
+              <textarea class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    </div>
+    <div class="d-block text-center card-footer">
+      <button class="btn-wide btn btn-success">Create</button>
+    </div>  
+  </div>
+    </div>

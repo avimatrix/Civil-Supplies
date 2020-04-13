@@ -1,14 +1,22 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GlobalService {
+  constructor(private router:Router) { }
 
-  constructor() { }
+  
+logedIn(){
+  return localStorage.getItem('role');
+}
 
-  userLogedIn(){
-    return JSON.parse(sessionStorage.getItem('userLoggedIn'));
-  }
+logOutUser(){
+  localStorage.removeItem('role');
+  localStorage.clear();
+  this.router.navigate(['/']);
+
+}
 
 }

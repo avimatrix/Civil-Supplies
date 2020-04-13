@@ -15,7 +15,7 @@ const routes: Routes = [
      children:[
        {path:'Home',component:DashboardComponent},
       {path: "CreateIndent", component: CreateIndentComponent},
-      {path: "CreateDispatch", component: CreateDispatchComponent },
+      {path: "CreateDemand", component: CreateDispatchComponent },
       {path: "ManageIndent", component: ManageIndentComponent },
       {path: "ApproveIndent", component: ApproveIndentComponent },
       {path: "DistrictWiseDemand", component: DistrictWiseDemandComponent },

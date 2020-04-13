@@ -27,6 +27,7 @@
             </div>
           </div> -->
         </div>
+        <div class="card-body">
         <div class="table-responsive">
           <p-table #dt [value]="manageIndents" [paginator]="true" [rows]="5" [showCurrentPageReport]="true">
           
@@ -51,14 +52,9 @@
                       <td>{{manageIndents.gunnyBags}}</td>
                       <td>{{manageIndents.status}}</td>
                   </tr>
-              </ng-template>
-              <!-- <p-paginator></p-paginator> -->
+              </ng-template> 
           </p-table>
-        </div>
-        <div class="d-block text-center card-footer">
-          <!-- <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i
-              class="pe-7s-trash btn-icon-wrapper"> </i></button>
-          <button class="btn-wide btn btn-success">Save</button> -->
+        </div> 
         </div>
       </div>
     </div>

@@ -75,7 +75,7 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
 
   <div class="row">
     <div class="col-md-6 col-xl-3">
-      <div class="card mb-3 widget-content" routerLink="/Dashboard/CreateIndent">
+      <div class="card mb-3 widget-content" *ngIf="globalService.logedIn()=='Marketing Manager' || globalService.logedIn()=='Admin'" routerLink="/Dashboard/CreateIndent">
         <div class="widget-content-outer">
           <div class="widget-content-wrapper">
             <div class="widget-content-left">
@@ -106,11 +106,11 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
       </div>
     </div>
     <div class="col-md-6 col-xl-3">
-      <div class="card mb-3 widget-content" routerLink="/Dashboard/CreateDispatch">
+      <div class="card mb-3 widget-content" *ngIf="globalService.logedIn()=='District Manager' || globalService.logedIn()=='Admin'" routerLink="/Dashboard/CreateDemand">
         <div class="widget-content-outer">
           <div class="widget-content-wrapper">
             <div class="widget-content-left">
-              <div class="widget-heading">Create Dispatch</div>
+              <div class="widget-heading">Create Demand</div>
               <div class="widget-subheading">Revenue streams</div>
             </div>
             <div class="widget-content-right">
@@ -120,23 +120,9 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTEyIiB2aWV3Qm94
           </div>
         </div>
       </div>
-      <div class="card mb-3 widget-content">
-        <div class="widget-content-outer">
-          <div class="widget-content-wrapper">
-            <div class="widget-content-left">
-              <div class="widget-heading">Indent Status</div>
-              <div class="widget-subheading">Revenue streams</div>
-            </div>
-            <div class="widget-content-right">
-            <img style="height: 42px;" src="data:image/svg+xml;base64,
-PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNDggMjQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNDggMjQ4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+CiAgICA8cmVjdCB3aWR0aD0iMjMyIiB4PSI3LjUiIHk9IjIxNSIgaGVpZ2h0PSIzMyIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9IiIgc3R5bGU9ImZpbGw6I0NFQTc1RiIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcmVjdD4KICAgIDxyZWN0IHdpZHRoPSIyMzMiIHg9IjcuNSIgeT0iMTUwIiBoZWlnaHQ9IjMzIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iIiBzdHlsZT0iZmlsbDojQ0VBNzVGIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCI+PC9yZWN0PgogICAgPHJlY3Qgd2lkdGg9IjIzMyIgeD0iNy41IiB5PSI4MyIgaGVpZ2h0PSIzMyIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9IiIgc3R5bGU9ImZpbGw6I0NFQTc1RiIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcmVjdD4KICAgIDxyZWN0IHdpZHRoPSIxMzMiIHg9IjEwNi41IiB5PSIxNyIgaGVpZ2h0PSIzMyIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9IiIgc3R5bGU9ImZpbGw6I0NFQTc1RiIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcmVjdD4KICAgIDxwb2x5Z29uIHBvaW50cz0iNDAuNSw2NiA4OS41LDMzIDQwLjUsMCA0MC41LDE3IDcuNSwxNyA3LjUsNTAgNDAuNSw1MCAgIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iIiBzdHlsZT0iZmlsbDojQ0VBNzVGIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCI+PC9wb2x5Z29uPgogIDwvZz48L2c+IDwvc3ZnPg==" />
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
      <div class="col-md-6 col-xl-3">
-      <div class="card mb-3 widget-content" routerLink="/Dashboard/ApproveIndent">
+      <div class="card mb-3 widget-content" *ngIf="globalService.logedIn()=='Finance Department' || globalService.logedIn()=='Admin'" routerLink="/Dashboard/ApproveIndent">
         <div class="widget-content-outer">
           <div class="widget-content-wrapper">
             <div class="widget-content-left">
@@ -150,7 +136,10 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
         </div>
       </div>
 
-      <div class="card mb-3 widget-content">
+    
+    </div>
+    <div class="col-md-6 col-xl-3">
+      <div class="card mb-3 widget-content" *ngIf="globalService.logedIn()=='Marketing Manager' || globalService.logedIn()=='District Manager' || globalService.logedIn()=='Admin'" >
         <div class="widget-content-outer">
           <div class="widget-content-wrapper">
             <div class="widget-content-left">
@@ -159,14 +148,14 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
             </div>
             <div class="widget-content-right">
               <img style="height: 42px;" src="data:image/svg+xml;base64,
-              PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00NTguNzMyLDQyMi4yMTJsLTIyLjg2Mi0yODguMTA5Yy0xLjQxOS0xOC41NjMtMTcuMTI0LTMzLjA5OC0zNS43MzctMzMuMDk4aC00NS4xNjR2NjYuOTE3ICAgIGMwLDguMjg3LTYuNzA4LDE0Ljk5NS0xNC45OTUsMTQuOTk1Yy04LjI3NywwLTE0Ljk5NS02LjcwOC0xNC45OTUtMTQuOTk1di02Ni45MTdIMTg3LjAyOHY2Ni45MTcgICAgYzAsOC4yODctNi43MTgsMTQuOTk1LTE0Ljk5NSwxNC45OTVjLTguMjg3LDAtMTQuOTk1LTYuNzA4LTE0Ljk5NS0xNC45OTV2LTY2LjkxN2gtNDUuMTY0Yy0xOC42MTMsMC0zNC4zMTgsMTQuNTM1LTM1LjczNywzMy4wNTggICAgTDUzLjI2NSw0MjIuMjUyYy0xLjc2OSwyMy4wODIsNi4yMzgsNDYuMDU0LDIxLjk2Miw2My4wMjhDOTAuOTUyLDUwMi4yNTMsMTEzLjI0NCw1MTIsMTM2LjM4Niw1MTJoMjM5LjIzNiAgICBjMjMuMTQyLDAsNDUuNDM0LTkuNzQ3LDYxLjE1OS0yNi43MjFDNDUyLjUwNSw0NjguMzA1LDQ2MC41MTIsNDQ1LjMzMyw0NTguNzMyLDQyMi4yMTJ6IE0zMjMuNTYsMjc1LjQ5M2wtNzcuNTUzLDc3LjU1MyAgICBjLTIuOTI5LDIuOTI5LTYuNzY4LDQuMzk4LTEwLjYwNiw0LjM5OGMtMy44MzksMC03LjY3Ny0xLjQ2OS0xMC42MDYtNC4zOThsLTM2LjM0Ny0zNi4zNDdjLTUuODU4LTUuODU4LTUuODU4LTE1LjM0NSwwLTIxLjIwMyAgICBjNS44NTgtNS44NTgsMTUuMzU1LTUuODU4LDIxLjIwMywwbDI1Ljc1MSwyNS43NDFsNjYuOTU2LTY2Ljk1NmM1Ljg0OC01Ljg0OCwxNS4zNDUtNS44NDgsMjEuMjAzLDAgICAgQzMyOS40MTgsMjYwLjEzOSwzMjkuNDE4LDI2OS42MzUsMzIzLjU2LDI3NS40OTN6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIiBzdHlsZT0iZmlsbDojREU4OTU5Ij48L3BhdGg+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yNTYuMDA0LDBjLTU0LjU3MSwwLTk4Ljk2NSw0NC40MDQtOTguOTY1LDk4Ljk3NXYyLjAyOWgyOS45OXYtMi4wMjljMC0zOC4wMzcsMzAuOTM5LTY4Ljk4Niw2OC45NzYtNjguOTg2ICAgIHM2OC45NzYsMzAuOTQ5LDY4Ljk3Niw2OC45ODZ2Mi4wMjloMjkuOTg5di0yLjAyOUMzNTQuOTY5LDQ0LjQwNCwzMTAuNTc1LDAsMjU2LjAwNCwweiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCIgc3R5bGU9ImZpbGw6I0RFODk1OSI+PC9wYXRoPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=" />
+              PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iNTEyIiBjbGFzcz0iIj48Zz48cGF0aCBkPSJtMjMuNjggNy44OC0xMS4yNS03Ljc1Yy0uMjYtLjE3LS42LS4xNy0uODYgMGwtMTEuMjUgNy43NWMtLjIuMTQtLjMyLjM3LS4zMi42MnYxNC41YzAgLjU1LjQ1IDEgMSAxaDR2LTExLjI1YzAtLjQxMy4zMzgtLjc1Ljc1LS43NWgxMi41Yy40MTMgMCAuNzUuMzM3Ljc1Ljc1djExLjI1aDRjLjU1IDAgMS0uNDUgMS0xdi0xNC41YzAtLjI1LS4xMi0uNDgtLjMyLS42MnoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0M3NkE1NSIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD48cGF0aCBkPSJtNi41IDE3LjVoMTF2Mi41aC0xMXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0M3NkE1NSIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD48cGF0aCBkPSJtNi41IDIxLjVoMTF2Mi41aC0xMXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0M3NkE1NSIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD48cGF0aCBkPSJtNi41IDEzLjVoMTF2Mi41aC0xMXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0M3NkE1NSIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD48L2c+IDwvc3ZnPg==" />
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-6 col-xl-3">
-      <div class="card mb-3 widget-content">
+
+
+      <!-- <div class="card mb-3 widget-content">
         <div class="widget-content-outer">
           <div class="widget-content-wrapper">
             <div class="widget-content-left">
@@ -178,7 +167,7 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
               PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iNTEyIiBjbGFzcz0iIj48Zz48cGF0aCBkPSJtMjMuNjggNy44OC0xMS4yNS03Ljc1Yy0uMjYtLjE3LS42LS4xNy0uODYgMGwtMTEuMjUgNy43NWMtLjIuMTQtLjMyLjM3LS4zMi42MnYxNC41YzAgLjU1LjQ1IDEgMSAxaDR2LTExLjI1YzAtLjQxMy4zMzgtLjc1Ljc1LS43NWgxMi41Yy40MTMgMCAuNzUuMzM3Ljc1Ljc1djExLjI1aDRjLjU1IDAgMS0uNDUgMS0xdi0xNC41YzAtLjI1LS4xMi0uNDgtLjMyLS42MnoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0M3NkE1NSIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD48cGF0aCBkPSJtNi41IDE3LjVoMTF2Mi41aC0xMXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0M3NkE1NSIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD48cGF0aCBkPSJtNi41IDIxLjVoMTF2Mi41aC0xMXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0M3NkE1NSIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD48cGF0aCBkPSJtNi41IDEzLjVoMTF2Mi41aC0xMXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0M3NkE1NSIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD48L2c+IDwvc3ZnPg==" />            </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
    
   </div>

@@ -6,7 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-dispatch.component.css']
 })
 export class CreateDispatchComponent implements OnInit {
-
+  districts=[  
+    "Anantapur",
+    "Chittoor",
+    "East Godavari",
+    "Guntur",
+    "Krishna",
+    "Kurnool",
+    "Nellore",
+    "Prakasam",
+    "Srikakulam",
+    "Visakhapatnam",
+    "Vizianagaram",
+    "West Godavari",
+    "YSR Kadapa"
+ ]
   createDispatch = [];
   constructor() {}
   first = 0;  

@@ -11056,7 +11056,7 @@ button,
 .app-header__logo .logo-src {
     height: 23px;
     width: 267px;
-    background: url(assets/images/logo-inverse.jpeg);
+    background: url(assets/images/logo-inverse.png);
     background-repeat: no-repeat;
 }
 
@@ -11281,7 +11281,7 @@ button,
 }
 
 .app-header.header-text-dark .app-header__logo .logo-src {
-    background: url(assets/images/logo-inverse.jpeg)
+    background: url(assets/images/logo-inverse.png)
 }
 
 .app-sidebar {
@@ -12148,7 +12148,7 @@ button,
 .search-wrapper.active .input-holder {
     width: 290px;
     border-radius: 50px;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.67);
     transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57)
 }
 
@@ -23507,7 +23507,7 @@ legend {
 .hamburger-inner::after {
     width: 24px;
     height: 2px;
-    background-color: #3f6ad8;
+    background-color: #3e3e3e;
     border-radius: 10px;
     position: absolute;
     transition-property: transform;
@@ -25698,4 +25698,24 @@ a.fc-more:hover {
 .picmain .widget-content:hover  .dashboard-img
 {
     opacity: 0.8;
+}
+.app-theme-white .app-header
+{
+    background: #4069d8;
+}
+.app-theme-white .app-header a
+{
+color:white !important;
+}
+.search-wrapper .input-holder .search-icon
+{
+    background: rgba(255, 255, 255, 0.7) !important;
+}
+.widget-heading, .widget-subheading
+{
+    color: white !important;
+}
+.app-main__inner .widget-content-wrapper .widget-heading, .app-main__inner .widget-content-wrapper .widget-subheading
+{
+    color: #333 !important;
 }
